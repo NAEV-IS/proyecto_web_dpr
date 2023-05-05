@@ -11,32 +11,33 @@
 </head>
 <body>
     
-    <header class="header">
-        <nav class="nav">
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="paginas/musica.html">Musica</a>
-                </li>
-                 
-                <li>
-                    <a href="paginas/video.html">Video</a>
-                </li>
-
-                <li>
-                    <a href="paginas/about.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="paginas/contacto.html">Contacto</a>
-                </li>
-
-            </ul>
-        </nav>
-    </header>
+    <div class="sidebar-nav">
+    
+        <nav class="navbar navbar-light p-3 " style="background-color: #1d1d1d;">
+    
+            <div class="container" >
+                <!-- Mobile Menu Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menus List -->
+                <div class="bg-light offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    
+                  <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <div class="barra">
+                            <li><a href="index.html"> <span class="item-text" style="color:black;">HOME</span></a></li>
+                            <li><a href="paginas/musica.html"><span class="item-text" style="color: black;">MUSICA</span></a></li>
+                            <li><a href="paginas/video.html"><span class="item-text" style="color: black;">VIDEO</span></a></li>
+                            <li><a href="paginas/about.html"> <span class="item-text" style="color: black;">NOSOTROS</span></a></li>
+                            <li><a href="paginas/contacto.html"> <span class="item-text" style="color: black;">CONTACTO</span></a></li>
+                            </div>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+    </div>
+    
     
 <main>
     <section>

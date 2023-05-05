@@ -10,32 +10,32 @@
     <link rel="stylesheet" href="../estilos/estilo2.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="menu">
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
+    <div class="sidebar-nav">
     
-                <li>
-                    <a href="../paginas/musica.html">Musica</a>
-                </li>
-                    
-                <li>
-                    <a href="../paginas/video.html">Video</a>
-                </li>
-
-                <li>
-                    <a href="../paginas/about.html">Nosotros</a>
-                </li>
+        <nav class="navbar navbar-light p-3 " style="background-color: #1d1d1d;">
     
-                <li>
-                    <a href="../paginas/contacto.html">Contacto</a>
-                </li>
+            <div class="container" >
+                <!-- Mobile Menu Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menus List -->
+                <div class="bg-light offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
     
-                </ul>
-        </nav>
-    </header>
+                  <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <div class="barra">
+                            <li><a href="../index.html"> <span class="item-text" style="color:black;">HOME</span></a></li>
+                            <li><a href="../paginas/musica.html"><span class="item-text" style="color: black;">MUSICA</span></a></li>
+                            <li><a href="../paginas/video.html"><span class="item-text" style="color: black;">VIDEO</span></a></li>
+                            <li><a href="../paginas/about.html"> <span class="item-text" style="color: black;">NOSOTROS</span></a></li>
+                            <li><a href="../paginas/contacto.html"> <span class="item-text" style="color: black;">CONTACTO</span></a></li>
+                            </div>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+    </div>
 
     <main class="grid-musica">
         
@@ -43,21 +43,27 @@
             <p class="titulo" >Moodswings in to Order</p>
                 <div class="set">
                     <div class="parte1">
-                    <ul>1.Seraph</ul>
-                    <ul>2. 1 Shot</ul>
-                    <ul>3. Mood</ul>
-                    <ul>4. Miss Understood</ul>
-                    <ul>5. Avalon</ul>
-                    <ul>6. Merry Go</ul>  
+                    
+                    <ul>
+                    <li>1.Seraph</li>
+                    <li>2. 1 Shot</li>
+                    <li>3. Mood</li>
+                    <li>4. Miss Understood</li>
+                    <li>5. Avalon</li>
+                    <li>6. Merry Go</li>
+                    </ul> 
                     </div>
 
                     <div class="parte2">
-                    <ul>7. Ribbon</ul>
-                    <ul>8. Winterfall</ul>
-                    <ul>9. Calico</ul>
-                    <ul>10. MR Insanity</ul>
-                    <ul>11. Ballroom Extravaganza</ul>
-                    <ul>12. Sometime I'm</ul>
+                    
+                    <ul>
+                    <li>7. Ribbon</li>
+                    <li>8. Winterfall</li>
+                    <li>9. Calico</li>
+                    <li>10. MR Insanity</li>
+                    <li>11. Ballroom Extravaganza</li>
+                    <li>12. Sometime I'm</li>
+                    </ul>
                     </div>
 
                 </div>
@@ -69,10 +75,20 @@
         </div>
 
         <div class="aside">
-            <img class="plt" src="../img/youtube-music-icon-free-png.webp" alt="">
-            <img class="plt" src="../img/descargar.png" alt="">
-            <img class="plt" src="../img/Spotify_logo_without_text.svg.webp" alt="">
-            <img class="plt" src="../img/634ee55fb0c9f.png" alt="">
+
+            <a href="https://music.youtube.com/playlist?list=OLAK5uy_n_2nP4U58NfUCVYIVWWUDW5IaKmOPNo1c&feature=share">
+                <img class="plt" src="../img/youtube-music-icon-free-png.webp" alt="">
+               </a>
+                <a href="https://tidal.com/browse/album/238591935">
+                    <img class="plt" src="../img/descargar.png" alt="">
+                </a>
+                <a href="https://open.spotify.com/album/7vp2iMEQzhNX4sEIUbHpiJ?si=9C0vbNfMQNq8cGGcXAObZQ">
+                    <img class="plt" src="../img/Spotify_logo_without_text.svg.webp" alt="">
+                </a>
+                <a href="https://deezer.page.link/AKSEncGv1NLztkL1A">
+                    <img class="plt" src="../img/634ee55fb0c9f.png" alt="">
+                </a>
+
         </div>
         
         <div class="preview">

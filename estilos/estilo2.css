@@ -19,10 +19,26 @@ body{
     font-family: "mitof";
     src: url(../fuente/MITO.ttf);
 }
-.header{
-    height: 100%;
-    padding: 50px;
-    background-color: rgb(255, 255, 255);
+.mito{
+    font-family: "mitof";
+    color: white;
+    display: flex;
+    font-size: 120px;
+    padding: 200px;
+    justify-content: center;
+}
+.barra{
+    font-family: "bebas";
+    display: flex;
+    padding: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.barra li{
+    font-size: 40px;
 }
 .nav ul li{
     list-style: none;
@@ -30,16 +46,7 @@ body{
     margin-left: 50px;
     float: left;
 }
-.mito{
-    font-family: "mitof";
-    color: white;
-    position: fixed;
-    font-size: 80px;
-    text-align: center;
-    left: 650px;
-    bottom: 230px;
-    display: flex;
-}
+
 .toOrder{
     width: 360px;
 }
@@ -87,7 +94,7 @@ body{
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    
 
 }
 .parte2{
@@ -117,6 +124,7 @@ body{
     width: 454px;
     height: 454px;
     margin-top: 60px;
+    border-radius: 16px;
 }
 
 
@@ -134,6 +142,7 @@ body{
 .plt{
     width: 79px;
     height: 79px;
+    border-radius: 16px;
 }
 .preview{
     grid-area: preview;
@@ -153,13 +162,17 @@ body{
 }
 
 
-.parte1 ul{
+.parte1 li{
     font-size: 25px;
     color: white;
+    list-style: none;
+    padding: 10px;
 }
-.parte2 ul{
+.parte2 li{
     font-size: 25px;
     color: white;
+    list-style: none;
+    padding: 10px;
 }
 .set{
     display: flex;
