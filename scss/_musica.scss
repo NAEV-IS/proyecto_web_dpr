@@ -1,0 +1,182 @@
+.grid-musica{
+    margin-top: 10px;
+    display: grid; 
+    grid-template-columns: 1.2fr 0.9fr 0.35fr; 
+    grid-template-rows: 1.58fr 0.25fr 0.15fr; 
+    gap: 33px 0px; 
+    grid-template-areas: 
+      "tracklist portada aside"
+      "preview preview preview"
+      "descrp descrp descrp";  
+}
+
+.tracklist{
+    grid-area: tracklist;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr 2.5fr; 
+    gap: 22px 9px; 
+    grid-template-areas: 
+      "titulo titulo"
+      "parte1 parte2"; 
+      justify-items: center;
+      justify-content: center;
+    margin-top: 1px;
+}
+.titulo{
+    grid-area: titulo;
+    align-self: flex-start;
+    margin-top: 100px;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.parte1{
+    grid-area: parte1;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    li{
+        font-size: 25px;
+        color: white;
+        list-style: none;
+        padding: 10px;
+    }
+}
+.parte2{
+    grid-area: parte2;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    li{
+        font-size: 25px;
+        color: white;
+        list-style: none;
+        padding: 10px;
+    }
+}
+.portada{
+    grid-area: portada;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    p{
+        font-size: 29px;
+        color: white;
+        margin-bottom: 40px;
+    }
+}
+.miito{
+    width: 454px;
+    height: 454px;
+    margin-top: 60px;
+    border-radius: 16px;
+}
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+.plt{
+    width: 79px;
+    height: 79px;
+    border-radius: 16px;
+}
+.preview{
+    grid-area: preview;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.descrp{
+    grid-area: descrp;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.set{
+    display: flex;
+    flex-direction:row;
+    margin-left: 50px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 500px){
+    .titulo{
+        grid-area: titulo;
+        font-size: 25px;
+    }
+    .set{
+        padding: 20px;
+        margin-left: 2px;
+    }
+    .parte1{
+        grid-area: parte1;
+        margin-right: 0px;
+        li{
+            font-size: 20px;
+        }
+    } 
+    .parte2{
+        grid-area: parte2;
+        margin-left: 0px;
+        li{
+        transform: translateY(-10px);
+        font-size: 20px;
+        }
+    }
+    .tracklist{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plt{
+        width: 55px;
+        height: 55px;
+        margin-left: 10px;
+    }
+    .miito{
+        height: 187px;
+        width: 187px;
+        margin-top: 110px;
+    }
+    .preview{
+        grid-area: preview;
+        display: flex;
+        align-items: center;
+    }
+    .descrp{
+        grid-area: descrp;
+        margin-top: 0px;
+    }
+    .aside{
+        grid-area: aside;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .portada{
+        padding-top: 1px;
+    }
+    .grid-musica{
+        display: grid; 
+        grid-template-columns: 1.1fr 0.9fr; 
+        grid-template-rows: 1.1fr 1.7fr 0.7fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "portada aside"
+          "tracklist tracklist"
+          "preview preview"
+          "descrp descrp";  
+    }
+}
