@@ -13,11 +13,19 @@
   font-family: "mitof";
   color: white;
   display: flex;
-  font-size: 120px;
   padding: 201px;
   justify-content: center;
 }
 
+.mito-dpr {
+  font-size: 70px;
+}
+
+@media screen and (max-width: 500px) {
+  .mito-dpr {
+    transform: translateY(80px);
+  }
+}
 .grid-musica {
   margin-top: 10px;
   display: grid;
@@ -331,6 +339,93 @@
   .grid_about-foto2 {
     padding-left: 0%;
     justify-content: center;
+  }
+}
+.grid-video {
+  display: grid;
+  margin-top: 20px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 35px 14px;
+  grid-template-areas: "ianv ianv ianv" "livev livev livev";
+}
+
+.dprianV {
+  grid-area: ianv;
+}
+
+.seraph {
+  height: 261px;
+  width: 406px;
+}
+
+.srdcat {
+  height: 261px;
+  width: 406px;
+}
+
+.youso {
+  height: 261px;
+  width: 406px;
+}
+
+.dprliveV {
+  grid-area: livev;
+}
+
+.legacy {
+  height: 261px;
+  width: 406px;
+}
+
+.crab {
+  height: 261px;
+  width: 406px;
+}
+
+.neon {
+  height: 261px;
+  width: 406px;
+}
+
+@media screen and (max-width: 500px) {
+  .dprianV {
+    grid-area: ianv;
+  }
+  .seraph {
+    height: 217px;
+    width: 339px;
+  }
+  .srdcat {
+    height: 217px;
+    width: 339px;
+  }
+  .youso {
+    height: 217px;
+    width: 339px;
+  }
+  .legacy {
+    height: 217px;
+    width: 339px;
+  }
+  .crab {
+    height: 217px;
+    width: 339px;
+  }
+  .neon {
+    height: 217px;
+    width: 339px;
+  }
+  .grid-video {
+    display: grid;
+    margin-left: 40px;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ianv" "ianv" "ianv" "livev" "livev" "livev";
   }
 }
 * {

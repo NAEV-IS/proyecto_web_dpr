@@ -2,7 +2,14 @@
     font-family: "mitof";
     color: white;
     display: flex;
-    font-size: 120px;
     padding: 201px;
     justify-content: center;
+}
+.mito-dpr{
+    font-size: 70px;
+}
+@media screen and (max-width: 500px){
+    .mito-dpr{
+        transform: translateY(80px);
+}
 }
