@@ -26,6 +26,11 @@
     transform: translateY(80px);
   }
 }
+@media screen and (min-width: 768px) {
+  .mito-dpr {
+    transform: translateY(80px);
+  }
+}
 .grid-musica {
   margin-top: 10px;
   display: grid;
@@ -141,7 +146,7 @@
   padding: 40px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .titulo {
     grid-area: titulo;
     font-size: 25px;
@@ -207,10 +212,24 @@
     grid-template-areas: "portada aside" "tracklist tracklist" "preview preview" "descrp descrp";
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-musica {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.4fr 0.6fr 1.8fr 0.6fr 0.6fr;
+    gap: 3px 0px;
+    grid-template-areas: "portada" "aside" "tracklist" "preview" "descrp";
+    width: 768px;
+  }
+  .aside {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+  }
+}
 .about_ian-h1 {
   font-family: "bebas";
   color: white;
-  margin: 40px;
   display: flex;
   justify-content: center;
 }
@@ -227,10 +246,13 @@
   gap: 0px 0px;
   grid-template-areas: "uno dos" "cinco cinco";
 }
+.grid_about-fotos img {
+  border-radius: 10px;
+}
 
 .img_1 {
   width: 509px;
-  height: 650px;
+  height: 640px;
   grid-area: uno;
   margin-left: 120px;
   justify-self: center;
@@ -275,9 +297,10 @@
   grid-area: cinco;
   justify-self: center;
   margin-right: 110px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .about_ian-h1 {
     display: flex;
     margin: 0px;
@@ -341,6 +364,42 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid_about-fotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas: "uno" "dos" "cinco";
+    justify-content: center;
+    align-items: center;
+  }
+  .grid_about-foto2 {
+    padding-left: 0%;
+    justify-content: center;
+  }
+  .img_3 {
+    width: 500px;
+    height: 280px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .img_1 {
+    margin-left: 0px;
+  }
+  .img_2-1 {
+    grid-area: dos;
+    justify-self: center;
+  }
+  .img2y3 {
+    justify-items: center;
+    padding: 30px;
+    transform: translateX(130px);
+  }
+  .img_2-2 {
+    grid-area: tres;
+  }
+}
 .grid-video {
   display: grid;
   margin-top: 20px;
@@ -354,18 +413,7 @@
 .dprianV {
   grid-area: ianv;
 }
-
-.seraph {
-  height: 261px;
-  width: 406px;
-}
-
-.srdcat {
-  height: 261px;
-  width: 406px;
-}
-
-.youso {
+.dprianV iframe {
   height: 261px;
   width: 406px;
 }
@@ -373,47 +421,17 @@
 .dprliveV {
   grid-area: livev;
 }
-
-.legacy {
+.dprliveV iframe {
   height: 261px;
   width: 406px;
 }
 
-.crab {
-  height: 261px;
-  width: 406px;
-}
-
-.neon {
-  height: 261px;
-  width: 406px;
-}
-
-@media screen and (max-width: 500px) {
-  .dprianV {
-    grid-area: ianv;
-  }
-  .seraph {
+@media screen and (min-width: 368px) and (max-width: 767px) {
+  .dprianV iframe {
     height: 217px;
     width: 339px;
   }
-  .srdcat {
-    height: 217px;
-    width: 339px;
-  }
-  .youso {
-    height: 217px;
-    width: 339px;
-  }
-  .legacy {
-    height: 217px;
-    width: 339px;
-  }
-  .crab {
-    height: 217px;
-    width: 339px;
-  }
-  .neon {
+  .dprliveV iframe {
     height: 217px;
     width: 339px;
   }
@@ -428,6 +446,26 @@
     grid-template-areas: "ianv" "ianv" "ianv" "livev" "livev" "livev";
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-video {
+    display: grid;
+    margin-left: 40px;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "ianv" "ianv" "ianv" "livev" "livev" "livev";
+  }
+  .dprianV iframe {
+    height: 434px;
+    width: 678px;
+  }
+  .dprliveV iframe {
+    height: 434px;
+    width: 678px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -440,7 +478,7 @@ a {
 }
 
 body {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(47, 47, 47);
   font-family: "alatsi";
 }
 

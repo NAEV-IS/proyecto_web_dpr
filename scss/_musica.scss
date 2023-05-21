@@ -109,7 +109,7 @@
     padding: 40px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     .titulo{
         grid-area: titulo;
         font-size: 25px;
@@ -180,3 +180,23 @@
           "descrp descrp";  
     }
 }
+@media screen and (min-width: 768px)and (max-width: 1024px){
+    .grid-musica{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1.4fr 0.6fr 1.8fr 0.6fr 0.6fr; 
+        gap: 3px 0px; 
+        grid-template-areas: 
+          "portada"
+          "aside"
+          "tracklist"
+          "preview"
+          "descrp"; 
+        width: 768px; 
+    }
+    .aside{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+    }
+    }
