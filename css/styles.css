@@ -324,23 +324,17 @@
   .img_2-1 {
     width: 255px;
     height: 134px;
-    grid-area: dos;
     justify-self: center;
-  }
-  .img2y3 {
-    display: flex;
-    transform: translateX(60px);
   }
   .img_2-2 {
     width: 105px;
     height: 177px;
-    grid-area: tres;
-    margin-right: 0px;
+    transform: translateX(15px);
   }
   .img_2-3 {
     width: 105px;
     height: 177px;
-    grid-area: cuatro;
+    transform: translateX(110px);
   }
   .img_3 {
     width: 255px;
@@ -360,8 +354,15 @@
     align-items: start;
   }
   .grid_about-foto2 {
-    padding-left: 0%;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 24px 0px;
+    grid-template-areas: "dos dos" "tres cuatro";
+    transform: translateX(40px);
+  }
+  .img2y3 {
+    display: grid;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -506,6 +507,23 @@ body {
 }
 .barra li {
   font-size: 40px;
+}
+
+.navbar navbar-light p-3 {
+  background-color: #303030;
+}
+
+.item-text {
+  color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.undr {
+  text-decoration: underline;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -66,6 +66,7 @@
     margin-bottom: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    
     .about_ian-h1{
         display: flex;
         margin: 0px;
@@ -90,23 +91,18 @@
     .img_2-1{
         width: 255px;
         height: 134px;
-        grid-area: dos;
         justify-self: center;
         }
-    .img2y3{
-     display: flex;
-     transform: translateX(60px);
-    }
+
     .img_2-2{
         width: 105px;
         height: 177px;
-        grid-area: tres;
-        margin-right: 0px;
+        transform: translateX(15px);
         }
     .img_2-3{
         width: 105px;
         height: 177px;
-        grid-area: cuatro;
+        transform: translateX(110px);
         }
     .img_3{
         width: 255px;
@@ -129,9 +125,18 @@
         align-items: start;
         }
     .grid_about-foto2{
-        padding-left: 0%;
-        justify-content: center;
-    }        
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.7fr 1.3fr; 
+        gap: 24px 0px; 
+        grid-template-areas: 
+          "dos dos"
+          "tres cuatro"; 
+          transform: translateX(40px);
+    } 
+    .img2y3{
+        display: grid; 
+       }       
     }
     @media screen and (min-width: 768px)and (max-width: 1024px){
         .grid_about-fotos{
